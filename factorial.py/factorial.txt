@@ -1,0 +1,15 @@
+Function Faktorial (n : integer) → integer
+{ Menghitung n! }
+
+Deklarasi
+    k   : integer
+    fak : integer
+
+Algoritma
+    fak ← 1
+    for k ← 1 to n do
+        fak ← fak * k
+    endfor
+
+    return fak
+EndFunction

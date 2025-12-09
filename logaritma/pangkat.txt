@@ -1,0 +1,15 @@
+Function Pangkat (a : real, n : integer) → real
+{ Menghitung a^n }
+
+Deklarasi
+    i     : integer
+    hasil : real
+
+Algoritma
+    hasil ← 1
+    for i ← 1 to n do
+        hasil ← hasil * a
+    endfor
+
+    return hasil
+EndFunction

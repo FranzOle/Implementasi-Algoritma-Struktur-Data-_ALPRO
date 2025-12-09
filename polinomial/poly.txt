@@ -1,0 +1,19 @@
+Function Polinom (t : real) → real
+{ Menghitung nilai p(x) pada x = t.
+  Koefisien-koefisien polinom sudah disimpan di dalam a[0..n]. }
+
+Deklarasi
+    i, j      : integer
+    p, pangkat : real
+
+Algoritma
+    p ← 0
+    for i ← n downto 0 do
+        pangkat ← 1
+        for j ← 1 to i do      { hitung t^i }
+            pangkat ← pangkat * t
+        endfor
+        p ← p + a[i] * pangkat
+    endfor
+    return p
+EndFunction

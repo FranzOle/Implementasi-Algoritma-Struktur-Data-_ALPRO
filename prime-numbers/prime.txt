@@ -1,0 +1,21 @@
+Function IsPrima (n : integer) → boolean
+{ Menguji apakah n bilangan prima atau bukan }
+
+Deklarasi
+    k    : integer
+    test : boolean
+
+Algoritma
+    test ← true
+    k ← 2
+
+    while (test) and (k ≤ n - 1) do
+        if n mod k = 0 then
+            test ← false
+        else
+            k ← k + 1
+        endif
+    endwhile
+
+    return test
+EndFunction

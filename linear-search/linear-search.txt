@@ -1,0 +1,27 @@
+Procedure PencarianBeruntun
+    (input a1, a2, ..., an : integer,
+     input x : integer,
+     output idx : integer)
+
+{ Mencari elemen bernilai x di dalam array a1, a2, ..., an.
+  Jika ditemukan, maka idx berisi posisi elemen.
+  Jika tidak ditemukan, maka idx diisi dengan -1 }
+
+Masukan  : a1, a2, ..., an, x
+Luaran   : idx
+
+Deklarasi
+    k : integer
+
+Algoritma
+    k ← 1
+    while (k ≤ n) and (a[k] ≠ x) do
+        k ← k + 1
+    endwhile
+
+    if a[k] = x then
+        idx ← k
+    else
+        idx ← -1
+    endif
+EndProcedure

@@ -1,0 +1,20 @@
+Procedure PerkalianMatriks
+    (input A, B : Matriks,
+     input n : integer,
+     output C : Matriks)
+{ Mengalikan matriks A dan B ukuran n x n,
+  menghasilkan matriks C ukuran n x n }
+
+Deklarasi
+    i, j, k : integer
+
+Algoritma
+    for i ← 1 to n do
+        for j ← 1 to n do
+            C[i, j] ← 0          { inisialisasi penjumlahan }
+            for k ← 1 to n do
+                C[i, j] ← C[i, j] + A[i, k] * B[k, j]
+            endfor
+        endfor
+    endfor
+EndProcedure

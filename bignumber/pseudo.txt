@@ -1,0 +1,14 @@
+Procedure CariTerbesar (input s1, s2, ..., sn : integer,
+                        output max : integer)
+
+Deklarasi
+    i : integer
+
+Algoritma
+    max ← s1
+    for i ← 2 to n do
+        if s[i] > max then
+            max ← s[i]
+        endif
+    endfor
+EndProcedure

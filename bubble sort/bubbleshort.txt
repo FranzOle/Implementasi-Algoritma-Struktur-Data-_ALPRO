@@ -1,0 +1,24 @@
+Procedure BubbleSort (input/output s1, s2, ..., sn : integer,
+                      input n : integer)
+{ Mengurutkan s1, s2, ..., sn sehingga terurut menaik
+  menggunakan metode Bubble Sort }
+
+Masukan  : s1, s2, ..., sn
+Luaran   : s1, s2, ..., sn (terurut menaik)
+
+Deklarasi
+    i    : integer    { pencacah jumlah langkah }
+    k    : integer    { pencacah perbandingan }
+    temp : integer    { peubah bantu untuk pertukaran }
+
+Algoritma
+    for i ← n-1 downto 1 do
+        for k ← 1 to i do
+            if s[k+1] < s[k] then
+                temp ← s[k]
+                s[k] ← s[k+1]
+                s[k+1] ← temp
+            endif
+        endfor
+    endfor
+EndProcedure
